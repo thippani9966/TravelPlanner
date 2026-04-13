@@ -1,0 +1,57 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --sand: #E8D5B7;
+  --terra: #C17A3A;
+  --deep: #1A1208;
+  --ocean: #1B4F72;
+  --mint: #48C9B0;
+  --coral: #E74C3C;
+  --gold: #F4D03F;
+  --smoke: #F5F0E8;
+  --ash: #8B7355;
+}
+
+html, body {
+  background: var(--smoke);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--deep);
+  min-height: 100vh;
+}
+
+input, textarea, select, button { font-family: 'DM Sans', sans-serif; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes aiPulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.5; }
+}
+
+.fade-up  { animation: fadeUp  0.4s ease both; }
+.fade-in  { animation: fadeIn  0.3s ease both; }
+.ai-loading { animation: aiPulse 1.2s ease-in-out infinite; }
+
+.trip-card { transition: transform 0.2s, box-shadow 0.2s; }
+.trip-card:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15) !important;
+}
+
+.btn-hover { transition: transform 0.15s; }
+.btn-hover:hover { transform: scale(1.04); }
+
+input:focus, textarea:focus {
+  border-color: var(--terra) !important;
+  outline: none;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--smoke); }
+::-webkit-scrollbar-thumb { background: var(--ash); border-radius: 6px; }
