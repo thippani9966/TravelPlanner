@@ -35,3 +35,4 @@ function TripCard(props) {
 }
 
 module.exports = TripCard;
+// Trip components
