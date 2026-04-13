@@ -94,3 +94,4 @@ function ReportsView(props) {
 }
 
 module.exports = ReportsView;
+// Reports view
