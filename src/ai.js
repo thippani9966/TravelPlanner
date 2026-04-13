@@ -74,4 +74,4 @@ function generateTripSummary(trip, spent, budget, catBreakdown) {
   return callClaude(system, msg, 200);
 }
 
-module.exports = { categoriseExpense, generateItinerary, suggestBudget, generateTripSummary };
+module.exports = { categoriseExpense, generateItinerary, suggestBudget, generateTripSummary };// AI integration
