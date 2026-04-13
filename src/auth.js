@@ -42,3 +42,4 @@ function login(username, password) {
 function logout() { clearSession(); }
 
 module.exports = { signup, login, logout, getSession };
+// Authentication module
